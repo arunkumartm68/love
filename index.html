@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>From Far Away 💙</title>
 
 <style>
@@ -18,7 +20,7 @@
 
     .letter {
         background: #ffffff;
-        width: 420px;
+        width: min(420px, 90%);
         padding: 32px;
         border-radius: 22px;
         box-shadow: 0 20px 50px rgba(255, 105, 135, 0.3);
@@ -167,6 +169,7 @@
 
     function playMusic() {
         music.play();
+        event.target.innerText = "Playing 💕";
     }
 
     // Floating hearts animation
